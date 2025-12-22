@@ -1,39 +1,60 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+<meta charset="UTF-8">
 <title>Web Development</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body{margin:0;font-family:Arial;background:#f4f6f8}
+header{background:linear-gradient(135deg,#11998e,#38ef7d);color:#fff;padding:40px;text-align:center}
+.container{width:90%;max-width:1200px;margin:auto;padding:40px 0}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:25px}
+.card{background:#fff;border-radius:12px;box-shadow:0 4px 10px rgba(0,0,0,.1);overflow:hidden}
+.card img{width:100%;height:180px;object-fit:cover}
+.card-content{padding:20px}
+code{display:block;background:#111;color:#0f0;padding:12px;border-radius:8px}
+.back{display:inline-block;margin-top:25px;font-weight:bold;color:#11998e;text-decoration:none}
+</style>
 </head>
-<body style="font-family:Arial; background:#f4f6f8; padding:30px;">
+<body>
 
+<header>
 <h1>Web Development</h1>
+<p>Frontend • Backend • Full Stack</p>
+</header>
 
-<p>
-Web development is the process of creating websites and web applications for the internet.
-It focuses on performance, design, responsiveness, and user experience.
-</p>
+<div class="container">
+<div class="cards">
 
-<h2>Types of Web Development</h2>
-<ul>
-<li>Frontend Development – UI and user interaction</li>
-<li>Backend Development – Server and database logic</li>
-<li>Full Stack Development – Frontend + Backend</li>
-</ul>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f">
+<div class="card-content">
+<h3>Frontend</h3>
+<p>UI & User Experience</p>
+<code>&lt;h1&gt;Hello Web&lt;/h1&gt;</code>
+</div>
+</div>
 
-<h2>Technologies Used</h2>
-<ul>
-<li>HTML, CSS, JavaScript</li>
-<li>React, Angular, Vue</li>
-<li>Bootstrap, Tailwind CSS</li>
-</ul>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c">
+<div class="card-content">
+<h3>Backend</h3>
+<p>Server & Database</p>
+<code>app.get("/",(req,res)=>res.send("API"))</code>
+</div>
+</div>
 
-<h2>Career Opportunities</h2>
-<ul>
-<li>Frontend Developer</li>
-<li>Web Designer</li>
-<li>Full Stack Developer</li>
-</ul>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1518770660439-4636190af475">
+<div class="card-content">
+<h3>Full Stack</h3>
+<p>Frontend + Backend</p>
+<code>React + Node.js</code>
+</div>
+</div>
 
-<a href="index.html">⬅ Back to Home</a>
-
+</div>
+<a class="back" href="index.html">⬅ Back to Home</a>
+</div>
 </body>
 </html>

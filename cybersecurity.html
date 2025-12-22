@@ -2,37 +2,44 @@
 <html>
 <head>
 <title>Cyber Security</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body{margin:0;font-family:Arial;background:#f4f6f8}
+header{background:linear-gradient(135deg,#000428,#004e92);color:white;padding:40px;text-align:center}
+.container{width:90%;max-width:1200px;margin:auto;padding:40px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:25px}
+.card{background:white;border-radius:12px;padding:20px;box-shadow:0 4px 10px rgba(0,0,0,.1)}
+code{background:#111;color:#0f0;padding:12px;display:block;border-radius:8px}
+.back{color:#004e92;font-weight:bold}
+</style>
 </head>
-<body style="font-family:Arial; background:#f4f6f8; padding:30px;">
+<body>
 
+<header>
 <h1>Cyber Security</h1>
+<p>Protect • Detect • Prevent</p>
+</header>
 
-<p>
-Cyber security protects systems and networks from digital attacks.
-</p>
+<div class="container">
+<div class="cards">
 
-<h2>Security Areas</h2>
-<ul>
-<li>Network Security</li>
-<li>Ethical Hacking</li>
-<li>Application Security</li>
-</ul>
+<div class="card">
+<h3>Ethical Hacking</h3>
+<code>nmap -sV target.com</code>
+</div>
 
-<h2>Tools</h2>
-<ul>
-<li>Kali Linux</li>
-<li>Wireshark</li>
-<li>Metasploit</li>
-</ul>
+<div class="card">
+<h3>Encryption</h3>
+<code>hashlib.sha256()</code>
+</div>
 
-<h2>Career Roles</h2>
-<ul>
-<li>Cyber Security Analyst</li>
-<li>Ethical Hacker</li>
-<li>Security Engineer</li>
-</ul>
+<div class="card">
+<h3>Security Analyst</h3>
+<code>Monitor Logs</code>
+</div>
 
-<a href="index.html">⬅ Back to Home</a>
-
+</div>
+<a class="back" href="index.html">⬅ Back to Home</a>
+</div>
 </body>
 </html>

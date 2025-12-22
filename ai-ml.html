@@ -2,38 +2,44 @@
 <html>
 <head>
 <title>AI & Machine Learning</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body{margin:0;font-family:Arial;background:#f4f6f8}
+header{background:linear-gradient(135deg,#41295a,#2F0743);color:white;padding:40px;text-align:center}
+.container{width:90%;max-width:1200px;margin:auto;padding:40px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:25px}
+.card{background:white;border-radius:12px;box-shadow:0 4px 10px rgba(0,0,0,.1);padding:20px}
+code{background:#111;color:#0f0;padding:12px;display:block;border-radius:8px}
+.back{color:#41295a;font-weight:bold}
+</style>
 </head>
-<body style="font-family:Arial; background:#f4f6f8; padding:30px;">
+<body>
 
+<header>
 <h1>AI & Machine Learning</h1>
+<p>Data • Models • Intelligence</p>
+</header>
 
-<p>
-Artificial Intelligence enables machines to mimic human intelligence.
-Machine Learning allows systems to learn from data.
-</p>
+<div class="container">
+<div class="cards">
 
-<h2>Applications</h2>
-<ul>
-<li>Chatbots</li>
-<li>Face Recognition</li>
-<li>Recommendation Systems</li>
-</ul>
+<div class="card">
+<h3>Basic Python</h3>
+<code>print("Hello AI")</code>
+</div>
 
-<h2>Technologies</h2>
-<ul>
-<li>Python</li>
-<li>TensorFlow</li>
-<li>Scikit-Learn</li>
-</ul>
+<div class="card">
+<h3>Machine Learning</h3>
+<code>model.fit(X,y)</code>
+</div>
 
-<h2>Careers</h2>
-<ul>
-<li>AI Engineer</li>
-<li>ML Engineer</li>
-<li>Data Scientist</li>
-</ul>
+<div class="card">
+<h3>Deep Learning</h3>
+<code>import tensorflow as tf</code>
+</div>
 
-<a href="index.html">⬅ Back to Home</a>
-
+</div>
+<a class="back" href="index.html">⬅ Back to Home</a>
+</div>
 </body>
 </html>

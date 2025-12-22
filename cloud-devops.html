@@ -2,38 +2,44 @@
 <html>
 <head>
 <title>Cloud & DevOps</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body{margin:0;font-family:Arial;background:#f4f6f8}
+header{background:linear-gradient(135deg,#136a8a,#267871);color:white;padding:40px;text-align:center}
+.container{width:90%;max-width:1200px;margin:auto;padding:40px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:25px}
+.card{background:white;border-radius:12px;padding:20px;box-shadow:0 4px 10px rgba(0,0,0,.1)}
+code{background:#111;color:#0f0;padding:12px;display:block;border-radius:8px}
+.back{color:#136a8a;font-weight:bold}
+</style>
 </head>
-<body style="font-family:Arial; background:#f4f6f8; padding:30px;">
+<body>
 
+<header>
 <h1>Cloud & DevOps</h1>
+<p>Deploy • Scale • Automate</p>
+</header>
 
-<p>
-Cloud computing delivers services over the internet.
-DevOps automates software delivery and infrastructure.
-</p>
+<div class="container">
+<div class="cards">
 
-<h2>Cloud Platforms</h2>
-<ul>
-<li>AWS</li>
-<li>Microsoft Azure</li>
-<li>Google Cloud</li>
-</ul>
+<div class="card">
+<h3>AWS</h3>
+<code>aws ec2 start-instances</code>
+</div>
 
-<h2>DevOps Tools</h2>
-<ul>
-<li>Docker</li>
-<li>Kubernetes</li>
-<li>Jenkins</li>
-</ul>
+<div class="card">
+<h3>Docker</h3>
+<code>docker run app</code>
+</div>
 
-<h2>Careers</h2>
-<ul>
-<li>Cloud Engineer</li>
-<li>DevOps Engineer</li>
-<li>Site Reliability Engineer</li>
-</ul>
+<div class="card">
+<h3>CI/CD</h3>
+<code>GitHub Actions</code>
+</div>
 
-<a href="index.html">⬅ Back to Home</a>
-
+</div>
+<a class="back" href="index.html">⬅ Back to Home</a>
+</div>
 </body>
 </html>
