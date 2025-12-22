@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Developer Hub</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f4f6f8;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin-bottom: 10px;
+            font-size: 40px;
+        }
+
+        header p {
+            font-size: 18px;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+            padding: 40px 0;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .section-title h2 {
+            font-size: 32px;
+            color: #1e3c72;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+        }
+
+        .card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 20px;
+        }
+
+        .card-content h3 {
+            margin-top: 0;
+            color: #2a5298;
+        }
+
+        .card-content p {
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        footer {
+            background: #1e3c72;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Developer Hub</h1>
+    <p>Learn, Build, Innovate – Everything Developers Can Do</p>
+</header>
+
+<div class="container">
+
+    <div class="section-title">
+        <h2>What Developers Can Do</h2>
+        <p>Explore different developer roles and skills</p>
+    </div>
+
+    <div class="cards">
+
+        <!-- Web Development -->
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085" alt="Web Development">
+            <div class="card-content">
+                <h3>Web Development</h3>
+                <p>
+                    Developers build responsive websites using HTML, CSS, JavaScript,
+                    frameworks like React, Angular, and backend technologies.
+                </p>
+            </div>
+        </div>
+
+        <!-- Mobile App Development -->
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9" alt="Mobile App Development">
+            <div class="card-content">
+                <h3>Mobile App Development</h3>
+                <p>
+                    Create Android and iOS applications using Java, Kotlin, Swift,
+                    Flutter, and React Native.
+                </p>
+            </div>
+        </div>
+
+        <!-- Backend Development -->
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c" alt="Backend Development">
+            <div class="card-content">
+                <h3>Backend Development</h3>
+                <p>
+                    Manage servers, databases, APIs, and authentication using
+                    Node.js, Java, Python, PHP, and cloud platforms.
+                </p>
+            </div>
+        </div>
+
+        <!-- AI & Machine Learning -->
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995" alt="AI and ML">
+            <div class="card-content">
+                <h3>AI & Machine Learning</h3>
+                <p>
+                    Develop intelligent systems using Python, data science,
+                    machine learning, and artificial intelligence models.
+                </p>
+            </div>
+        </div>
+
+        <!-- Cyber Security -->
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b" alt="Cyber Security">
+            <div class="card-content">
+                <h3>Cyber Security</h3>
+                <p>
+                    Protect systems from cyber attacks by implementing security,
+                    ethical hacking, encryption, and monitoring tools.
+                </p>
+            </div>
+        </div>
+
+        <!-- Cloud & DevOps -->
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8" alt="Cloud Computing">
+            <div class="card-content">
+                <h3>Cloud & DevOps</h3>
+                <p>
+                    Deploy, manage, and scale applications using AWS, Azure,
+                    Docker, Kubernetes, and CI/CD pipelines.
+                </p>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<footer>
+    © 2025 Developer Hub | Designed for Learning & Innovation
+</footer>
+
+</body>
+</html>
