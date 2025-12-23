@@ -11,68 +11,58 @@ body{
     font-family:Arial, Helvetica, sans-serif;
     background:#f4f6f8;
     color:#333;
+    line-height:1.6;
 }
-
 header{
     background:linear-gradient(135deg,#6a11cb,#2575fc);
     color:white;
-    padding:45px 20px;
+    padding:50px 20px;
     text-align:center;
 }
-
 .container{
     width:90%;
     max-width:1200px;
     margin:auto;
     padding:40px 0;
 }
-
-.section-title{
+h2{
     color:#2575fc;
-    margin-bottom:25px;
+    margin-top:40px;
 }
-
 .cards{
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
     gap:25px;
+    margin-top:20px;
 }
-
 .card{
     background:white;
     border-radius:14px;
     box-shadow:0 6px 15px rgba(0,0,0,0.1);
     overflow:hidden;
-    transition:transform 0.3s;
 }
-
-.card:hover{
-    transform:translateY(-6px);
-}
-
 .card img{
     width:100%;
     height:180px;
     object-fit:cover;
 }
-
 .card-content{
     padding:22px;
 }
-
-.card-content h3{
-    margin-top:0;
-    color:#2575fc;
+pre{
+    background:#111;
+    color:#00ff90;
+    padding:15px;
+    border-radius:8px;
+    overflow-x:auto;
 }
-
 .back{
     display:inline-block;
     margin-top:40px;
-    text-decoration:none;
     font-weight:bold;
     color:#2575fc;
+    text-decoration:none;
 }
-
 footer{
     background:#2575fc;
     color:white;
@@ -85,147 +75,256 @@ footer{
 <body>
 
 <header>
-    <h1>Mobile App Development</h1>
-    <p>Design • Build • Deploy Mobile Applications</p>
+<h1>Mobile App Development</h1>
+<p>From Fundamentals to Real-World Applications</p>
 </header>
 
 <div class="container">
 
-<h2 class="section-title">What is Mobile App Development?</h2>
+<h2>What is Mobile App Development?</h2>
 <p>
-Mobile app development is the process of creating applications that run on
-smartphones and tablets. These apps are designed for platforms like Android and iOS
-to provide rich user experiences and functionality.
+Mobile app development is the process of creating applications that run on smartphones
+and tablets. These applications are designed for platforms such as Android and iOS
+and focus on performance, usability, security, and scalability.
 </p>
 
-<h2 class="section-title">Categories of Mobile Applications</h2>
+<h3>Key Characteristics</h3>
+<ul>
+<li>Touch-based user interfaces</li>
+<li>Integration with device hardware (camera, GPS, sensors)</li>
+<li>Optimized for performance and battery usage</li>
+<li>Secure handling of user data</li>
+</ul>
+
+<h3>Common Challenges</h3>
+<pre>
+• Performance issues on low-end devices
+• High battery consumption
+• App crashes after OS updates
+• Device and screen-size fragmentation
+</pre>
+
+<hr>
+
+<h2>Categories of Mobile Applications</h2>
 
 <div class="cards">
 
-<!-- Native Apps -->
+<!-- Native -->
 <div class="card">
-<img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9">
+<img src="images/mobile.jpg">
 <div class="card-content">
 <h3>Native Applications</h3>
 <p>
-Native apps are built specifically for a single platform such as Android or iOS.
-They offer high performance, better user experience, and full access to device features.
+Native apps are developed specifically for one platform such as Android or iOS.
+They provide the best performance and full access to device features.
 </p>
-<p><strong>Used For:</strong></p>
+
+<h4>Advantages</h4>
 <ul>
-<li>High-performance apps</li>
-<li>Gaming applications</li>
-<li>Device-specific features</li>
+<li>High speed and smooth UI</li>
+<li>Full hardware access</li>
+<li>Best user experience</li>
 </ul>
+
+<h4>Disadvantages</h4>
+<ul>
+<li>Separate apps for Android and iOS</li>
+<li>Higher development cost</li>
+</ul>
+
+<h4>Real-World Problems</h4>
+<pre>
+• App becomes slow when loading large images
+• Memory leaks due to lifecycle mismanagement
+• App crashes after Android/iOS updates
+</pre>
+
+<h4>Solution Concepts</h4>
+<pre>
+• Optimize image sizes
+• Handle activity lifecycle correctly
+• Test on multiple OS versions
+</pre>
 </div>
 </div>
 
-<!-- Hybrid Apps -->
+<!-- Hybrid -->
 <div class="card">
-<img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c">
+<img src="images/backend.jpg">
 <div class="card-content">
 <h3>Hybrid Applications</h3>
 <p>
-Hybrid apps combine web technologies with native mobile features.
-They are easier to maintain and faster to develop compared to native apps.
+Hybrid apps are built using web technologies and wrapped inside a native container.
+They are easier to maintain and faster to develop.
 </p>
-<p><strong>Used For:</strong></p>
+
+<h4>Advantages</h4>
 <ul>
-<li>Business applications</li>
-<li>Content-based apps</li>
-<li>Quick deployment solutions</li>
+<li>Single codebase</li>
+<li>Faster development</li>
+<li>Easier maintenance</li>
 </ul>
+
+<h4>Disadvantages</h4>
+<ul>
+<li>Slower than native apps</li>
+<li>Limited hardware access</li>
+</ul>
+
+<h4>Real-World Problems</h4>
+<pre>
+• Laggy user interface
+• WebView rendering issues
+• Performance drops on older devices
+</pre>
+
+<h4>Optimization Concepts</h4>
+<pre>
+• Reduce heavy JavaScript
+• Optimize API calls
+• Use lightweight UI components
+</pre>
 </div>
 </div>
 
-<!-- Cross Platform Apps -->
+<!-- Cross Platform -->
 <div class="card">
-<img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f">
+<img src="images/cloud.jpg">
 <div class="card-content">
 <h3>Cross-Platform Applications</h3>
 <p>
-Cross-platform apps use a single codebase to run on both Android and iOS platforms,
-reducing development cost and time.
+Cross-platform apps use a single codebase to run on both Android and iOS,
+reducing development time and cost.
 </p>
-<p><strong>Used For:</strong></p>
+
+<h4>Advantages</h4>
 <ul>
-<li>Startup products</li>
-<li>Enterprise applications</li>
-<li>Multi-platform solutions</li>
+<li>Lower cost</li>
+<li>Faster market launch</li>
+<li>Shared business logic</li>
 </ul>
+
+<h4>Disadvantages</h4>
+<ul>
+<li>Platform-specific bugs</li>
+<li>Slight performance overhead</li>
+</ul>
+
+<h4>Real-World Problems</h4>
+<pre>
+• UI inconsistencies across platforms
+• Plugin compatibility issues
+• Animation performance issues
+</pre>
+
+<h4>Solution Concepts</h4>
+<pre>
+• Platform-specific UI handling
+• Native module optimization
+• Performance testing on both OS
+</pre>
 </div>
 </div>
 
 </div>
 
-<h2 class="section-title">Roles & Responsibilities</h2>
+<hr>
+
+<h2>Roles & Responsibilities</h2>
 
 <div class="cards">
 
 <div class="card">
 <div class="card-content">
 <h3>Android Developer</h3>
-<p>
-Designs and builds applications for Android devices while ensuring performance,
-security, and usability.
-</p>
+<p>Builds Android apps ensuring performance, security, and usability.</p>
+<h4>Common Problems</h4>
+<pre>
+• Fragment lifecycle errors
+• Memory leaks
+• Background service restrictions
+</pre>
 </div>
 </div>
 
 <div class="card">
 <div class="card-content">
 <h3>iOS Developer</h3>
-<p>
-Develops applications for Apple devices focusing on smooth user experience
-and platform guidelines.
-</p>
+<p>Develops apps for Apple devices following strict platform guidelines.</p>
+<h4>Common Problems</h4>
+<pre>
+• App Store rejection
+• Backward compatibility issues
+• Security compliance requirements
+</pre>
 </div>
 </div>
 
 <div class="card">
 <div class="card-content">
 <h3>Mobile App Engineer</h3>
-<p>
-Works across platforms to design scalable, secure, and maintainable mobile applications.
-</p>
+<p>Designs scalable, secure, cross-platform mobile architectures.</p>
+<h4>Common Problems</h4>
+<pre>
+• Multi-platform build failures
+• Crash monitoring in production
+• CI/CD pipeline issues
+</pre>
 </div>
 </div>
 
 </div>
 
-<h2 class="section-title">Applications & Use Cases</h2>
+<hr>
 
-<div class="cards">
+<h2>Application Use Cases & Challenges</h2>
 
-<div class="card">
-<div class="card-content">
-<h3>E-Commerce</h3>
-<p>Online shopping, payments, and product management apps.</p>
-</div>
-</div>
+<h3>E-Commerce Applications</h3>
+<pre>
+Problems:
+• Payment failures
+• High traffic during sales
+• Cart synchronization issues
 
-<div class="card">
-<div class="card-content">
-<h3>Healthcare</h3>
-<p>Appointment booking, fitness tracking, and health monitoring apps.</p>
-</div>
-</div>
+Solutions:
+• Secure payment gateways
+• Load balancing
+• Caching frequently accessed data
+</pre>
 
-<div class="card">
-<div class="card-content">
-<h3>Education</h3>
-<p>E-learning platforms, virtual classrooms, and exam preparation apps.</p>
-</div>
-</div>
+<h3>Healthcare Applications</h3>
+<pre>
+Problems:
+• Data privacy risks
+• Real-time data synchronization
+• Accuracy of health records
 
-</div>
+Solutions:
+• Data encryption
+• Secure APIs
+• Data validation mechanisms
+</pre>
+
+<h3>Education Applications</h3>
+<pre>
+Problems:
+• Video buffering
+• User engagement drop
+• Offline access
+
+Solutions:
+• Adaptive streaming
+• Gamification
+• Offline content support
+</pre>
 
 <a class="back" href="index.html">⬅ Back to Home</a>
 
 </div>
 
 <footer>
-    © 2025 Developer Hub
+© 2025 Developer Hub
 </footer>
 
 </body>
