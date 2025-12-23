@@ -5,41 +5,75 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
 body{margin:0;font-family:Arial;background:#f4f6f8}
-header{background:linear-gradient(135deg,#41295a,#2F0743);color:white;padding:40px;text-align:center}
+header{background:linear-gradient(135deg,#41295a,#2F0743);color:#fff;padding:45px;text-align:center}
 .container{width:90%;max-width:1200px;margin:auto;padding:40px}
 .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:25px}
-.card{background:white;border-radius:12px;box-shadow:0 4px 10px rgba(0,0,0,.1);padding:20px}
-code{background:#111;color:#0f0;padding:12px;display:block;border-radius:8px}
-.back{color:#41295a;font-weight:bold}
+.card{background:#fff;border-radius:14px;box-shadow:0 6px 15px rgba(0,0,0,.1);overflow:hidden}
+.card img{width:100%;height:180px;object-fit:cover}
+.card-content{padding:22px}
+.back{font-weight:bold;color:#41295a;text-decoration:none}
+footer{background:#41295a;color:#fff;text-align:center;padding:15px}
 </style>
 </head>
-<body>
 
+<body>
 <header>
 <h1>AI & Machine Learning</h1>
-<p>Data • Models • Intelligence</p>
+<p>Data • Intelligence • Automation</p>
 </header>
 
 <div class="container">
+
+<h2>Types of AI & ML</h2>
 <div class="cards">
 
 <div class="card">
-<h3>Basic Python</h3>
-<code>print("Hello AI")</code>
-</div>
-
-<div class="card">
+<img src="https://images.unsplash.com/photo-1677442136019-21780ecad995">
+<div class="card-content">
 <h3>Machine Learning</h3>
-<code>model.fit(X,y)</code>
+<p>Systems learn patterns from data and improve automatically.</p>
+</div>
 </div>
 
 <div class="card">
+<img src="https://images.unsplash.com/photo-1508385082359-f38ae991e8f5">
+<div class="card-content">
 <h3>Deep Learning</h3>
-<code>import tensorflow as tf</code>
+<p>Uses neural networks for complex tasks like vision and speech.</p>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e">
+<div class="card-content">
+<h3>Artificial Intelligence</h3>
+<p>Simulates human intelligence in machines.</p>
+</div>
 </div>
 
 </div>
+
+<h2>Use Cases & Applications</h2>
+<div class="cards">
+<div class="card"><div class="card-content">
+<h3>Healthcare</h3>
+<p>Disease prediction, medical imaging, diagnostics.</p>
+</div></div>
+
+<div class="card"><div class="card-content">
+<h3>Finance</h3>
+<p>Fraud detection, risk analysis, stock prediction.</p>
+</div></div>
+
+<div class="card"><div class="card-content">
+<h3>Smart Systems</h3>
+<p>Chatbots, recommendation engines, automation.</p>
+</div></div>
+</div>
+
 <a class="back" href="index.html">⬅ Back to Home</a>
 </div>
+
+<footer>© 2025 Developer Hub</footer>
 </body>
 </html>

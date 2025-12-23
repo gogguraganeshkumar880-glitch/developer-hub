@@ -16,7 +16,7 @@ body{
 header{
     background:linear-gradient(135deg,#6a11cb,#2575fc);
     color:white;
-    padding:40px 20px;
+    padding:45px 20px;
     text-align:center;
 }
 
@@ -27,13 +27,9 @@ header{
     padding:40px 0;
 }
 
-.section{
-    margin-bottom:50px;
-}
-
-.section h2{
+.section-title{
     color:#2575fc;
-    margin-bottom:20px;
+    margin-bottom:25px;
 }
 
 .cards{
@@ -44,9 +40,14 @@ header{
 
 .card{
     background:white;
-    border-radius:12px;
-    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+    border-radius:14px;
+    box-shadow:0 6px 15px rgba(0,0,0,0.1);
     overflow:hidden;
+    transition:transform 0.3s;
+}
+
+.card:hover{
+    transform:translateY(-6px);
 }
 
 .card img{
@@ -56,22 +57,17 @@ header{
 }
 
 .card-content{
-    padding:20px;
+    padding:22px;
 }
 
-code{
-    display:block;
-    background:#111;
-    color:#0f0;
-    padding:15px;
-    border-radius:8px;
-    font-size:14px;
-    overflow-x:auto;
+.card-content h3{
+    margin-top:0;
+    color:#2575fc;
 }
 
 .back{
     display:inline-block;
-    margin-top:30px;
+    margin-top:40px;
     text-decoration:none;
     font-weight:bold;
     color:#2575fc;
@@ -90,130 +86,138 @@ footer{
 
 <header>
     <h1>Mobile App Development</h1>
-    <p>Build Android & iOS Apps — From Basics to Professional Level</p>
+    <p>Design • Build • Deploy Mobile Applications</p>
 </header>
 
 <div class="container">
 
-<!-- INTRO -->
-<div class="section">
-    <h2>What is Mobile App Development?</h2>
-    <p>
-        Mobile app development is the process of creating applications for
-        Android and iOS devices. Apps can be native, hybrid, or cross-platform.
-    </p>
+<h2 class="section-title">What is Mobile App Development?</h2>
+<p>
+Mobile app development is the process of creating applications that run on
+smartphones and tablets. These apps are designed for platforms like Android and iOS
+to provide rich user experiences and functionality.
+</p>
+
+<h2 class="section-title">Categories of Mobile Applications</h2>
+
+<div class="cards">
+
+<!-- Native Apps -->
+<div class="card">
+<img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9">
+<div class="card-content">
+<h3>Native Applications</h3>
+<p>
+Native apps are built specifically for a single platform such as Android or iOS.
+They offer high performance, better user experience, and full access to device features.
+</p>
+<p><strong>Used For:</strong></p>
+<ul>
+<li>High-performance apps</li>
+<li>Gaming applications</li>
+<li>Device-specific features</li>
+</ul>
+</div>
 </div>
 
-<!-- TYPES -->
-<div class="section">
-    <h2>Types of Mobile Applications</h2>
-
-    <div class="cards">
-
-        <!-- NATIVE -->
-        <div class="card">
-            <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9">
-            <div class="card-content">
-                <h3>Native Apps</h3>
-                <p>Built for a specific platform (Android or iOS).</p>
-
-                <strong>Basic (Android – Java)</strong>
-                <code>
-public class MainActivity extends AppCompatActivity {
-    protected void onCreate(Bundle b) {
-        super.onCreate(b);
-        setContentView(R.layout.activity_main);
-    }
-}
-                </code>
-
-                <strong>Pro (Android – Kotlin)</strong>
-                <code>
-class MainActivity : AppCompatActivity() {
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
-    }
-}
-                </code>
-            </div>
-        </div>
-
-        <!-- HYBRID -->
-        <div class="card">
-            <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c">
-            <div class="card-content">
-                <h3>Hybrid Apps</h3>
-                <p>Built using web technologies and wrapped as mobile apps.</p>
-
-                <strong>Basic (HTML)</strong>
-                <code>
-&lt;h1&gt;Hello Mobile App&lt;/h1&gt;
-&lt;p&gt;Hybrid App&lt;/p&gt;
-                </code>
-
-                <strong>Pro (Cordova)</strong>
-                <code>
-cordova create myApp
-cordova platform add android
-cordova run android
-                </code>
-            </div>
-        </div>
-
-        <!-- CROSS PLATFORM -->
-        <div class="card">
-            <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f">
-            <div class="card-content">
-                <h3>Cross-Platform Apps</h3>
-                <p>Single codebase for Android and iOS.</p>
-
-                <strong>Basic (Flutter)</strong>
-                <code>
-void main() {
-  runApp(Text("Hello App"));
-}
-                </code>
-
-                <strong>Pro (React Native)</strong>
-                <code>
-import { Text } from 'react-native';
-export default function App() {
-  return &lt;Text&gt;Hello World&lt;/Text&gt;;
-}
-                </code>
-            </div>
-        </div>
-
-    </div>
+<!-- Hybrid Apps -->
+<div class="card">
+<img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c">
+<div class="card-content">
+<h3>Hybrid Applications</h3>
+<p>
+Hybrid apps combine web technologies with native mobile features.
+They are easier to maintain and faster to develop compared to native apps.
+</p>
+<p><strong>Used For:</strong></p>
+<ul>
+<li>Business applications</li>
+<li>Content-based apps</li>
+<li>Quick deployment solutions</li>
+</ul>
+</div>
 </div>
 
-<!-- CAREERS -->
-<div class="section">
-    <h2>Career Opportunities</h2>
+<!-- Cross Platform Apps -->
+<div class="card">
+<img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f">
+<div class="card-content">
+<h3>Cross-Platform Applications</h3>
+<p>
+Cross-platform apps use a single codebase to run on both Android and iOS platforms,
+reducing development cost and time.
+</p>
+<p><strong>Used For:</strong></p>
+<ul>
+<li>Startup products</li>
+<li>Enterprise applications</li>
+<li>Multi-platform solutions</li>
+</ul>
+</div>
+</div>
 
-    <div class="cards">
-        <div class="card">
-            <div class="card-content">
-                <h3>Android Developer</h3>
-                <p>Works with Java/Kotlin to build Android apps.</p>
-            </div>
-        </div>
+</div>
 
-        <div class="card">
-            <div class="card-content">
-                <h3>iOS Developer</h3>
-                <p>Uses Swift to develop Apple apps.</p>
-            </div>
-        </div>
+<h2 class="section-title">Roles & Responsibilities</h2>
 
-        <div class="card">
-            <div class="card-content">
-                <h3>Mobile App Engineer</h3>
-                <p>Builds scalable cross-platform applications.</p>
-            </div>
-        </div>
-    </div>
+<div class="cards">
+
+<div class="card">
+<div class="card-content">
+<h3>Android Developer</h3>
+<p>
+Designs and builds applications for Android devices while ensuring performance,
+security, and usability.
+</p>
+</div>
+</div>
+
+<div class="card">
+<div class="card-content">
+<h3>iOS Developer</h3>
+<p>
+Develops applications for Apple devices focusing on smooth user experience
+and platform guidelines.
+</p>
+</div>
+</div>
+
+<div class="card">
+<div class="card-content">
+<h3>Mobile App Engineer</h3>
+<p>
+Works across platforms to design scalable, secure, and maintainable mobile applications.
+</p>
+</div>
+</div>
+
+</div>
+
+<h2 class="section-title">Applications & Use Cases</h2>
+
+<div class="cards">
+
+<div class="card">
+<div class="card-content">
+<h3>E-Commerce</h3>
+<p>Online shopping, payments, and product management apps.</p>
+</div>
+</div>
+
+<div class="card">
+<div class="card-content">
+<h3>Healthcare</h3>
+<p>Appointment booking, fitness tracking, and health monitoring apps.</p>
+</div>
+</div>
+
+<div class="card">
+<div class="card-content">
+<h3>Education</h3>
+<p>E-learning platforms, virtual classrooms, and exam preparation apps.</p>
+</div>
+</div>
+
 </div>
 
 <a class="back" href="index.html">⬅ Back to Home</a>

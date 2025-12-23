@@ -5,41 +5,64 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
 body{margin:0;font-family:Arial;background:#f4f6f8}
-header{background:linear-gradient(135deg,#136a8a,#267871);color:white;padding:40px;text-align:center}
+header{background:linear-gradient(135deg,#136a8a,#267871);color:#fff;padding:45px;text-align:center}
 .container{width:90%;max-width:1200px;margin:auto;padding:40px}
 .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:25px}
-.card{background:white;border-radius:12px;padding:20px;box-shadow:0 4px 10px rgba(0,0,0,.1)}
-code{background:#111;color:#0f0;padding:12px;display:block;border-radius:8px}
-.back{color:#136a8a;font-weight:bold}
+.card{background:#fff;border-radius:14px;box-shadow:0 6px 15px rgba(0,0,0,.1);overflow:hidden}
+.card img{width:100%;height:180px;object-fit:cover}
+.card-content{padding:22px}
+.back{color:#136a8a;font-weight:bold;text-decoration:none}
+footer{background:#136a8a;color:#fff;text-align:center;padding:15px}
 </style>
 </head>
-<body>
 
+<body>
 <header>
 <h1>Cloud & DevOps</h1>
-<p>Deploy • Scale • Automate</p>
+<p>Build • Deploy • Scale</p>
 </header>
 
 <div class="container">
+
+<h2>Cloud Models</h2>
 <div class="cards">
+<div class="card"><div class="card-content">
+<h3>Public Cloud</h3>
+<p>Services offered over the internet to everyone.</p>
+</div></div>
 
-<div class="card">
-<h3>AWS</h3>
-<code>aws ec2 start-instances</code>
+<div class="card"><div class="card-content">
+<h3>Private Cloud</h3>
+<p>Dedicated cloud for a single organization.</p>
+</div></div>
+
+<div class="card"><div class="card-content">
+<h3>Hybrid Cloud</h3>
+<p>Combination of public and private clouds.</p>
+</div></div>
 </div>
 
-<div class="card">
-<h3>Docker</h3>
-<code>docker run app</code>
+<h2>Roles in Cloud & DevOps</h2>
+<div class="cards">
+<div class="card"><div class="card-content">
+<h3>Cloud Engineer</h3>
+<p>Manages cloud infrastructure and services.</p>
+</div></div>
+
+<div class="card"><div class="card-content">
+<h3>DevOps Engineer</h3>
+<p>Automates development and deployment workflows.</p>
+</div></div>
+
+<div class="card"><div class="card-content">
+<h3>Site Reliability Engineer</h3>
+<p>Ensures system reliability and uptime.</p>
+</div></div>
 </div>
 
-<div class="card">
-<h3>CI/CD</h3>
-<code>GitHub Actions</code>
-</div>
-
-</div>
 <a class="back" href="index.html">⬅ Back to Home</a>
 </div>
+
+<footer>© 2025 Developer Hub</footer>
 </body>
 </html>

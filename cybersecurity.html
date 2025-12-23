@@ -5,41 +5,75 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
 body{margin:0;font-family:Arial;background:#f4f6f8}
-header{background:linear-gradient(135deg,#000428,#004e92);color:white;padding:40px;text-align:center}
+header{background:linear-gradient(135deg,#000428,#004e92);color:#fff;padding:45px;text-align:center}
 .container{width:90%;max-width:1200px;margin:auto;padding:40px}
 .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:25px}
-.card{background:white;border-radius:12px;padding:20px;box-shadow:0 4px 10px rgba(0,0,0,.1)}
-code{background:#111;color:#0f0;padding:12px;display:block;border-radius:8px}
-.back{color:#004e92;font-weight:bold}
+.card{background:#fff;border-radius:14px;box-shadow:0 6px 15px rgba(0,0,0,.1);overflow:hidden}
+.card img{width:100%;height:180px;object-fit:cover}
+.card-content{padding:22px}
+.back{color:#004e92;font-weight:bold;text-decoration:none}
+footer{background:#004e92;color:#fff;text-align:center;padding:15px}
 </style>
 </head>
-<body>
 
+<body>
 <header>
 <h1>Cyber Security</h1>
-<p>Protect • Detect • Prevent</p>
+<p>Protect • Detect • Defend</p>
 </header>
 
 <div class="container">
+
+<h2>Cyber Security Domains</h2>
 <div class="cards">
 
 <div class="card">
-<h3>Ethical Hacking</h3>
-<code>nmap -sV target.com</code>
+<img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b">
+<div class="card-content">
+<h3>Network Security</h3>
+<p>Protects networks from unauthorized access.</p>
+</div>
 </div>
 
 <div class="card">
-<h3>Encryption</h3>
-<code>hashlib.sha256()</code>
+<img src="https://images.unsplash.com/photo-1510511459019-5dda7724fd87">
+<div class="card-content">
+<h3>Application Security</h3>
+<p>Secures software from vulnerabilities.</p>
+</div>
 </div>
 
 <div class="card">
+<img src="https://images.unsplash.com/photo-1600267165601-8e7f0c0f6e1a">
+<div class="card-content">
+<h3>Information Security</h3>
+<p>Protects data integrity and confidentiality.</p>
+</div>
+</div>
+
+</div>
+
+<h2>Careers in Cyber Security</h2>
+<div class="cards">
+<div class="card"><div class="card-content">
+<h3>Ethical Hacker</h3>
+<p>Identifies and fixes security loopholes.</p>
+</div></div>
+
+<div class="card"><div class="card-content">
 <h3>Security Analyst</h3>
-<code>Monitor Logs</code>
+<p>Monitors and responds to cyber threats.</p>
+</div></div>
+
+<div class="card"><div class="card-content">
+<h3>Security Engineer</h3>
+<p>Designs secure IT infrastructure.</p>
+</div></div>
 </div>
 
-</div>
 <a class="back" href="index.html">⬅ Back to Home</a>
 </div>
+
+<footer>© 2025 Developer Hub</footer>
 </body>
 </html>

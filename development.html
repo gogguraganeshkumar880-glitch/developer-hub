@@ -4,57 +4,206 @@
 <meta charset="UTF-8">
 <title>Web Development</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <style>
-body{margin:0;font-family:Arial;background:#f4f6f8}
-header{background:linear-gradient(135deg,#11998e,#38ef7d);color:#fff;padding:40px;text-align:center}
-.container{width:90%;max-width:1200px;margin:auto;padding:40px 0}
-.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:25px}
-.card{background:#fff;border-radius:12px;box-shadow:0 4px 10px rgba(0,0,0,.1);overflow:hidden}
-.card img{width:100%;height:180px;object-fit:cover}
-.card-content{padding:20px}
-code{display:block;background:#111;color:#0f0;padding:12px;border-radius:8px}
-.back{display:inline-block;margin-top:25px;font-weight:bold;color:#11998e;text-decoration:none}
+body{
+    margin:0;
+    font-family:Arial, Helvetica, sans-serif;
+    background:#f4f6f8;
+    color:#333;
+}
+
+header{
+    background:linear-gradient(135deg,#11998e,#38ef7d);
+    color:white;
+    padding:45px 20px;
+    text-align:center;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+    padding:40px 0;
+}
+
+.section-title{
+    color:#11998e;
+    margin-bottom:25px;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:white;
+    border-radius:14px;
+    box-shadow:0 6px 15px rgba(0,0,0,0.1);
+    overflow:hidden;
+    transition:transform 0.3s;
+}
+
+.card:hover{
+    transform:translateY(-6px);
+}
+
+.card img{
+    width:100%;
+    height:180px;
+    object-fit:cover;
+}
+
+.card-content{
+    padding:22px;
+}
+
+.card-content h3{
+    margin-top:0;
+    color:#11998e;
+}
+
+.back{
+    display:inline-block;
+    margin-top:40px;
+    text-decoration:none;
+    font-weight:bold;
+    color:#11998e;
+}
+
+footer{
+    background:#11998e;
+    color:white;
+    text-align:center;
+    padding:15px;
+}
 </style>
 </head>
+
 <body>
 
 <header>
-<h1>Web Development</h1>
-<p>Frontend • Backend • Full Stack</p>
+    <h1>Web Development</h1>
+    <p>Design • Build • Manage Modern Websites</p>
 </header>
 
 <div class="container">
+
+<h2 class="section-title">What is Web Development?</h2>
+<p>
+Web development is the process of creating and maintaining websites and web applications.
+It focuses on how a website looks, works, and performs for users.
+</p>
+
+<h2 class="section-title">Categories of Web Development</h2>
+
 <div class="cards">
 
+<!-- Frontend -->
 <div class="card">
 <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f">
 <div class="card-content">
-<h3>Frontend</h3>
-<p>UI & User Experience</p>
-<code>&lt;h1&gt;Hello Web&lt;/h1&gt;</code>
+<h3>Frontend Development</h3>
+<p>
+Frontend development focuses on the visual part of a website that users interact with.
+It includes layout, colors, fonts, buttons, animations, and responsiveness.
+</p>
+<p><strong>Key Responsibilities:</strong></p>
+<ul>
+<li>User Interface (UI)</li>
+<li>User Experience (UX)</li>
+<li>Responsive Design</li>
+<li>Browser Compatibility</li>
+</ul>
 </div>
 </div>
 
+<!-- Backend -->
 <div class="card">
 <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c">
 <div class="card-content">
-<h3>Backend</h3>
-<p>Server & Database</p>
-<code>app.get("/",(req,res)=>res.send("API"))</code>
+<h3>Backend Development</h3>
+<p>
+Backend development handles the server-side logic of a website.
+It manages data, authentication, databases, and server communication.
+</p>
+<p><strong>Key Responsibilities:</strong></p>
+<ul>
+<li>Server Management</li>
+<li>Database Operations</li>
+<li>User Authentication</li>
+<li>API Handling</li>
+</ul>
 </div>
 </div>
 
+<!-- Full Stack -->
 <div class="card">
 <img src="https://images.unsplash.com/photo-1518770660439-4636190af475">
 <div class="card-content">
-<h3>Full Stack</h3>
-<p>Frontend + Backend</p>
-<code>React + Node.js</code>
+<h3>Full Stack Development</h3>
+<p>
+Full stack developers work on both frontend and backend parts of a website.
+They understand how the complete system works from user interface to database.
+</p>
+<p><strong>Key Responsibilities:</strong></p>
+<ul>
+<li>End-to-End Development</li>
+<li>System Integration</li>
+<li>Deployment & Maintenance</li>
+</ul>
+</div>
+</div>
+
+<!-- Web Design -->
+<div class="card">
+<img src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8">
+<div class="card-content">
+<h3>Web Design</h3>
+<p>
+Web design focuses on the look and feel of a website.
+It ensures that the website is visually attractive and easy to navigate.
+</p>
+<p><strong>Key Responsibilities:</strong></p>
+<ul>
+<li>Layout Design</li>
+<li>Color & Typography</li>
+<li>Brand Consistency</li>
+<li>User Flow</li>
+</ul>
+</div>
+</div>
+
+<!-- Performance & SEO -->
+<div class="card">
+<img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40">
+<div class="card-content">
+<h3>Web Performance & SEO</h3>
+<p>
+This category focuses on website speed, performance, and search engine visibility.
+It ensures fast loading and better ranking on search engines.
+</p>
+<p><strong>Key Responsibilities:</strong></p>
+<ul>
+<li>Page Speed Optimization</li>
+<li>Search Engine Optimization</li>
+<li>Accessibility</li>
+<li>Analytics & Monitoring</li>
+</ul>
 </div>
 </div>
 
 </div>
+
 <a class="back" href="index.html">⬅ Back to Home</a>
+
 </div>
+
+<footer>
+    © 2025 Developer Hub
+</footer>
+
 </body>
 </html>
