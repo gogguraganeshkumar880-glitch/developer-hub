@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>User Registration</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+body{
+    margin:0;
+    font-family:Arial, Helvetica, sans-serif;
+    background:linear-gradient(135deg,#6a11cb,#2575fc);
+    height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.form-box{
+    background:#fff;
+    width:350px;
+    padding:30px;
+    border-radius:12px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.2);
+}
+
+.form-box h2{
+    text-align:center;
+    color:#2575fc;
+}
+
+input{
+    width:100%;
+    padding:12px;
+    margin:10px 0;
+    border-radius:6px;
+    border:1px solid #ccc;
+    font-size:14px;
+}
+
+button{
+    width:100%;
+    padding:12px;
+    background:#2575fc;
+    border:none;
+    color:white;
+    font-size:16px;
+    border-radius:6px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#1e5ed8;
+}
+
+.message{
+    margin-top:10px;
+    text-align:center;
+    font-weight:bold;
+}
+.back{
+    display:block;
+    text-align:center;
+    margin-top:15px;
+    text-decoration:none;
+    color:#2575fc;
+    font-weight:bold;
+}
+</style>
+</head>
+
+<body>
+
+<div class="form-box">
+<h2>Register</h2>
+
+<form onsubmit="return validateForm()">
+
+<input type="text" id="user" placeholder="Email or Mobile Number" required>
+
+<input type="password" id="pass" placeholder="Password" required>
+
+<input type="password" id="confirm" placeholder="Confirm Password" required>
+
+<button type="submit">Register</button>
+
+<p class="message" id="msg"></p>
+
+</form>
+
+<a class="back" href="index.html">⬅ Back to Home</a>
+</div>
+
+<script>
+function validateForm(){
+    let user = document.getElementById("user").value;
+    let pass = document.getElementById("pass").value;
+    let confirm = document.getElementById("confirm").value;
+    let msg = document.getElementById("msg");
+
+    if(pass !== confirm){
+        msg.style.color = "red";
+        msg.innerText = "Passwords do not match!";
+        return false;
+    }
+
+    msg.style.color = "green";
+    msg.innerText = "Registration Successful (Demo)";
+    return false; // prevents actual submission (GitHub Pages safe)
+}
+</script>
+
+</body>
+</html>
